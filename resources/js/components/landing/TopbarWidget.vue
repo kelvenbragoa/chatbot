@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 function smoothScroll(id) {
     document.body.click();
     const element = document.getElementById(id);
@@ -13,7 +13,7 @@ function smoothScroll(id) {
 
 <template>
     <a class="flex items-center" href="#">
-        <svg viewBox="0 0 54 40" fill="none" xmlns="http://www.w3.org/2000/svg" class="h-12 mr-2">
+        <!-- <svg viewBox="0 0 54 40" fill="none" xmlns="http://www.w3.org/2000/svg" class="h-12 mr-2">
             <path
                 fill-rule="evenodd"
                 clip-rule="evenodd"
@@ -30,7 +30,7 @@ function smoothScroll(id) {
                 />
             </g>
         </svg>
-        <span class="text-surface-900 dark:text-surface-0 font-medium text-2xl leading-normal mr-20">SAKAI</span>
+        <span class="text-surface-900 dark:text-surface-0 font-medium text-2xl leading-normal mr-20">SAKAI</span> -->
     </a>
     <Button
         class="lg:!hidden"
@@ -50,23 +50,23 @@ function smoothScroll(id) {
             </li>
             <li>
                 <a @click="smoothScroll('features')" class="px-0 py-4 text-surface-900 dark:text-surface-0 font-medium text-xl">
-                    <span>Features</span>
+                    <span>Cursos</span>
                 </a>
             </li>
             <li>
                 <a @click="smoothScroll('highlights')" class="px-0 py-4 text-surface-900 dark:text-surface-0 font-medium text-xl">
-                    <span>Highlights</span>
+                    <span>Sobre Nós</span>
                 </a>
             </li>
             <li>
                 <a @click="smoothScroll('pricing')" class="px-0 py-4 text-surface-900 dark:text-surface-0 font-medium text-xl">
-                    <span>Pricing</span>
+                    <span>Contatos</span>
                 </a>
             </li>
         </ul>
-        <div class="flex border-t lg:border-t-0 border-surface py-4 lg:py-0 mt-4 lg:mt-0 gap-2">
+        <!-- <div class="flex border-t lg:border-t-0 border-surface py-4 lg:py-0 mt-4 lg:mt-0 gap-2">
             <Button label="Login" text as="router-link" to="/auth/login" rounded></Button>
             <Button label="Register" to="/auth/login" rounded></Button>
-        </div>
+        </div> -->
     </div>
 </template>

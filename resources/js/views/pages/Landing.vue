@@ -6,6 +6,8 @@ import HighlightsWidget from '@/components/landing/HighlightsWidget.vue';
 import PricingWidget from '@/components/landing/PricingWidget.vue';
 import TopbarWidget from '@/components/landing/TopbarWidget.vue';
 import FloatingChat from '@/components/FloatingChat.vue';
+import ChatBot from '@/components/ChatBot.vue';
+import NewChatBot from '@/components/NewChatBot.vue';
 
 </script>
 
@@ -20,7 +22,9 @@ import FloatingChat from '@/components/FloatingChat.vue';
             <HighlightsWidget />
             <PricingWidget />
             <FooterWidget />
-            <FloatingChat />
+            <!-- <FloatingChat />
+            <ChatBot /> -->
+            <NewChatBot />
         </div>
     </div>
 </template>
